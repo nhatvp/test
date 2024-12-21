@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -35,4 +37,142 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* General header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 120px;
+  background-color: #333;
+  color: #ff9800;
+  height: 60px;
+}
+
+/* Logo styles */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Navigation styles */
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav ul li {
+  margin: 0 15px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item .icon {
+  margin-right: 5px;
+  font-size: 18px;
+}
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-item:hover {
+  color: #fff;
+}
+
+/* Notification badge */
+.notification-badge {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Menu button */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  color: #ff9800;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: #fff;
+}
+
+/* button group */
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.graph-section {
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+
+.graph-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+
+.box-text {
+  z-index: 1;
 }
